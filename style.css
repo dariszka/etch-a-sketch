@@ -1,0 +1,14 @@
+.square {
+    background-color: rgb(219, 163, 219);
+    border: 1px solid black;
+    height: 46px;
+    width: 46px; 
+}
+
+.row {
+     display: flex; 
+}
+
+#container {
+    margin: 0;
+}
