@@ -5,8 +5,12 @@
     width: 46px; 
 }
 
+.hover {
+    background-color: rgb(72, 5, 91);
+}
+
 .row {
-     display: flex; 
+    display: flex; 
 }
 
 #container {
