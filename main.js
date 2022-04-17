@@ -1,6 +1,7 @@
-const container = document.querySelector('#container');
 
-for (let i = 0; i < 16; i++) {
+function drawGrid() {
+  const container = document.querySelector('#container');  for (let i = 0; i < 16; i++) {
+    
     const row = document.createElement('div')
     row.classList.add('row')
     container.appendChild(row)
@@ -8,17 +9,21 @@ for (let i = 0; i < 16; i++) {
         for (let i = 0; i < 16; i++) {
         const square = document.createElement('div');
         square.classList.add('square');
+        square.addEventListener('mouseover', changeColor)
     
+        
         row.appendChild(square)
         }
-       
+     
+    }
 }
 
-
-const square = document.querySelector('square');
-
-square.addEventListener('click', changeColor)
+drawGrid()
 
 function changeColor() {
-    alert("bro pls");
-  }
+            this.classList.add('hover');
+        }
+
+
+
+
