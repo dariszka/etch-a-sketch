@@ -1,10 +1,11 @@
-
-   
+ 
 let numberOfSquares = getNumberOfSquares()
 
 let grid = drawGrid()
 
 restart()
+
+
 
 function getNumberOfSquares() {
     let inputNumber = prompt ('big??');
@@ -12,7 +13,7 @@ function getNumberOfSquares() {
     if (inputNumber < 101) {
         return inputNumber;
     } else {
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 5; i++) {
             let inputNumberAgain =  prompt('cool now type a number up to a 100')          
             if (inputNumberAgain < 101) {
                 return inputNumberAgain;
