@@ -3,7 +3,7 @@ let numberOfSquares = getNumberOfSquares()
 
 let grid = drawGrid()
 
-restart()
+let restartButton = clickRestartButton()
 
 
 
@@ -49,7 +49,7 @@ function changeColor() {
     this.classList.add('hover');
 }
 
-function restart() {
+function clickRestartButton() {
     const btn = document.querySelector('#btn')
     btn.addEventListener('click', () => window.location.reload())
 }
